@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+    </style>
+    <script src="JSindex.js"> </script> 
+    
+</head>
+<body>
+    <table >
+    <tr>
+        <td  width="50%" rowspan="2"> <img src="https://images.pexels.com/photos/3727254/pexels-photo-3727254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="backgroundpic"></td>
+        <td width="50%">
+            <h1 style="text-align:center"></h1><br>
+        </td>
+    </tr>   
+    <tr>
+    
+    <td>   
+    <div class = "container">
+
+    <form name="regisform" action="newHTML.html">
+        <fieldset>
+            <legend><h1 style="color:yellow" ><em>Create A New Account</em></h1></legend> 
+
+            <label><strong> Name :</strong></label>
+            <input type="text" id="username" name="username" size="60" required pattern="[a-zA-Z]+" placeholder="Please enter your full name in alphabet"/> 
+                        <br><br>
+            <label><strong> Passwords :</strong></label>
+            <input type="password" id="psw" name="psw" size="40" required pattern="[0-9a-zA-Z]{8~20}" placeholder="At least 8 digits mixed with nubmer,uppercase and lowercase"/>
+            <input class="clickhere" type="button" onclick="return checkPwd();" value="Check My Passwords"/>
+            <br><br>
+            <label><strong> E-Mail :</strong></label>
+            <input type="email" id=useremail name="useremail" size="60" required placeholder="abc@gmail.com"/>
+            <input class="clickhere" type="button" onclick="return checkEmail();" value="Try Me"/>
+            <br><br>
+            <label><strong> Date of Birth :</strong></label>
+            <input type="date" id="userdob" name="userdob" size="40" required/>
+            <input class="clickhere" type="button" onclick="return checkDob();" value="Try Me"/>
+            <br><br>
+            <label><strong> Mobile Numbers :</strong></label>
+            <input type="number" id="usermob" name="usermob" size="40" placeholder="Optional"/>
+            <input class="clickhere" type="button" onclick="return checkMob();"value="Try Me">
+
+            <button type="submit" onclick="return validName()"><em>Submit</em></button>
+      
+        </fieldset>
+        
+    </form>
+    </div>
+   
+    
+    </td>
+    </tr>
+   </table>
+</body>
+</html>
